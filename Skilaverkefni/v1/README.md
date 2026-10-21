@@ -9,7 +9,7 @@
 
 Skrifaðu forrit sem tekur eitthundrað bókstafi (bara enska stafrófið) af handahófi (e. random) og setur í tvívítt fylki (10 x 10). Forritið þarf svo að eiga annað fylki (einvítt) sem heldur utan um hversu oft hver stafur kemur upp.
 
-Forritið á svo að birta valmynd þar sem notandinn getur valið um að gera eftirfarandi (útfærðu föll fyrir fyrstu fjóra liðina):
+Forritið á svo að birta valmynd þar sem notandinn getur valið um að gera eftirfarandi:
 
 - Sjá allar 100 bókstafina, skrifist snyrtilega út í 10 línum, 10 bókstafir í línu.
 - Sjá fjölda af hverjum bókstaf.
