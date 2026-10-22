@@ -31,7 +31,7 @@ Vísbendingar:
 
 ## Skil á verkefninu
 
-Skilið verkefninu á Innu. Skilin ættu að vera ein .cpp skrá.
+Skilið verkefninu á Canvas. Skilin ættu að vera ein .cpp skrá.
 
 ## Bjargir
 
