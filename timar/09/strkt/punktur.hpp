@@ -1,4 +1,6 @@
 // punktur.hpp
+#pragma once // tryggir að skráin verði bara lesin einu sinni
+
 #include <iostream>
 
 class Punktur {
