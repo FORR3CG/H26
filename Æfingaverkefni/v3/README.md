@@ -28,7 +28,7 @@ Fallið á að búa til kvikt fylki með tölunum frá 1 upp í `fjoldi` og skil
 
 Prentaðu fylkið í `main()` og losaðu minnið.
 
-## Verkefni 4 – Stækka fylki - [Lausn](./lausn4/main.cpp)
+#### 4 – Stækka fylki - [Lausn](./lausn4/main.cpp)
 
 Gefið er fylkið:
 
