@@ -1,6 +1,6 @@
 ### Æfingaverkefni 5 - Yfirskrifun virkja
 
-#### 1 – Bankareikningur - [Lausn á leiðinni]
+#### 1 – Bankareikningur - [Lausn á leiðinni][Lausn](./lausn1/)
 
 Taktu bankareikninginn úr æfingaverkefnum 4 [(sjá hér)](../v4/lausn2/), útfærðu `to_string()` fall fyrir klasann og bættu við eftirfarndi virkjum:
 - `==` og `!=`, tveir reikningar eru eins ef eigandinn er sá sami.
@@ -9,7 +9,7 @@ Taktu bankareikninginn úr æfingaverkefnum 4 [(sjá hér)](../v4/lausn2/), útf
     - ("Geir", 1000) er minna en ("Tskóli", 1000)
 - `<<` virkinn fyrir cout þannig að cout kunni að skrifa út klasann.
 
-#### 2 - Nemandi - [Lausn](./lausn2/)
+#### 2 - Nemandi - [Lausn á leiðinni]
 
 Taktu nemandann úr æfingaverkefnum 4 [(sjá hér)](../v4/lausn3/).
 
