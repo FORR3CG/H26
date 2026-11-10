@@ -31,7 +31,11 @@ void Hnit::prenta() {
 }
 
 std::string Hnit::to_string() {
-    // TODO
+    return std::to_string('(') +
+           std::to_string(this->x) +
+           ", " +
+           std::to_string(this->y) +
+           std::to_string(')');
 }
 
 bool Hnit::er_eins_og(Hnit& hitt) {
@@ -77,3 +81,8 @@ bool Hnit::operator>=(Hnit& hitt) {
     return !(*this < hitt);
 }
 
+std::ostream& operator<<(std::ostream& ostr, Hnit& hnit) {
+    return ostr << hnit.to_string();
+    // eða ef við eigum ekki to_string
+    //return ostr << "(" << hnit.get_x() << ", " << hnit.get_y() << ")";
+}

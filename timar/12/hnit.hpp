@@ -24,3 +24,5 @@ class Hnit {
         bool operator>=(Hnit& hitt);
         bool er_eins_og(Hnit& hitt);
 };
+
+std::ostream& operator<<(std::ostream& ostr, Hnit& hnit);

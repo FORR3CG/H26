@@ -9,6 +9,7 @@ int main() {
     Hnitastafli hs;
     Hnit h = Hnit(2,3);
     Hnit h2 = Hnit(3,3);
+    cout << h << " -> " << h2 << endl;
     if(1.0 == 1.0) cout << "eitthvað" << endl;
     // if(h.==(h2)) {
     if(h == h2) {
@@ -56,7 +57,7 @@ class Hnit:
     def __eq__(self, hitt):
         return self.x == hitt.x and self.y == hitt.y
 
-    def __neq__(self, hitt):
+    def __ne__(self, hitt):
         return not (self == hitt)
 
 
