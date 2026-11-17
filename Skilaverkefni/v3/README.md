@@ -56,4 +56,4 @@ cout << sl << endl;
 
 ## Skil
 
-Skilaðu `Lag.hpp`, `Lag.cpp`, `Spilunarlisti.hpp`, `Spilunarlisti.cpp` og `main.cpp`. 
+Skilaðu `lag.hpp`, `lag.cpp`, `spilunarlisti.hpp`, `spilunarlisti.cpp` og `main.cpp`. 
