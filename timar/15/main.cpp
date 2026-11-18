@@ -91,6 +91,12 @@ class Listi {
             if(idx != -1) return this->fjarlaegja_saeti(idx, stak);
             return false;
         }
+
+        void prenta() {
+            for(int i = 0; i < this->fjoldi; i++)
+                cout << this->listinn[i] << " ";
+            cout << endl;
+        }
 };
 
 int main() {
@@ -99,5 +105,13 @@ int main() {
     l.setja_fremst(20);
     l.setja_fremst(30);
     l.setja_fremst(40);
+    l.prenta();
+    int stak;
+    if(l.fjarlaegja_stak(30, stak)) {
+        cout << "Fjarlægði " << stak << endl;
+    } else {
+        cout << "Fann ekki það sem leitað var að!" << endl;
+    }
+    l.prenta();
     return 0;
 }
