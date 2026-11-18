@@ -63,6 +63,34 @@ class Listi {
             this->fjoldi--;
             return true;
         }
+
+        bool fjarlaegja_fremsta(int& stak) {
+            return this->fjarlaegja_saeti(0, stak);
+        }
+
+        bool fjarlaegja_aftasta(int& stak) {
+            // return fjarlaegja_saeti(this->fjoldi - 1, stak);
+            // eða
+            if(this->fjoldi > 0) {
+                stak = this->listinn[--this->fjoldi];
+                return true;
+            }
+            return false;
+        }
+
+        int finna_tolu(int tala) {
+            for(int i = 0; i < this->fjoldi; i++) {
+                if(this->listinn[i] == tala)
+                    return i;
+            }
+            return -1;
+        }
+
+        bool fjarlaegja_stak(int tala, int& stak) {
+            int idx = this->finna_tolu(tala);
+            if(idx != -1) return this->fjarlaegja_saeti(idx, stak);
+            return false;
+        }
 };
 
 int main() {
