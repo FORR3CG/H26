@@ -18,6 +18,6 @@ class Hnitalisti {
         bool fjarlaegja_fremsta(Hnit& stak);
         bool fjarlaegja_aftasta(Hnit& stak);
         int finna_hnit(Hnit hnit);
-        bool fjarlaegja_stak(Hnit hnit);
+        bool fjarlaegja_stak(Hnit& hnit);
         void prenta();
 };
