@@ -11,7 +11,7 @@
 
 ## Klasinn `Lag`
 
-Lag geymir titil og flytjanda sem `string`. Útfærðu default smið sem býr til lag án titils ("") og flytjanda ("") og svo annan sem tekur við heitinu og flytjandanum. Klasinn þarf að eiga getters og setters fyrir gagnabreyturnar ásamt því að `to_string()` fall. Útfærðu `==` virkjann þannig að tvö lög eru eins ef bæði titill og flytjandi er eins. Kenndu svo `cout` (ostream) að skrifa út klasann.
+Lag geymir titil og flytjanda sem `string`. Útfærðu default smið sem býr til lag án titils ("") og flytjanda ("") og svo annan sem tekur við heitinu og flytjandanum. Klasinn þarf að eiga getters og setters fyrir gagnabreyturnar ásamt því að eiga `to_string()` fall. Útfærðu `==` virkjann þannig að tvö lög eru eins ef bæði titill og flytjandi er eins. Kenndu svo `cout` (ostream) að skrifa út klasann.
 
 Dæmi um notkun:
 
