@@ -68,6 +68,7 @@ class Hundur : public Dyr { // class Undirklasi(Yfirklasi):
 int main() {
     Hundur* h = new Hundur(11, "Snati", 8);
     Dyr* dg[5];
+    Dyr** dgp = new Dyr*[5];
     dg[0] = h;
     dg[1] = new Kottur(12, "Grettir", "Jón");
     for(int i = 0; i < 2; i++) {
