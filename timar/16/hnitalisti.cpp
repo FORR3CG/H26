@@ -67,7 +67,7 @@ int Hnitalisti::finna_hnit(Hnit hnit) {
     return -1;
 }
 
-bool Hnitalisti::fjarlaegja_stak(Hnit& hnit) {
+bool Hnitalisti::fjarlaegja_stak(Hnit hnit) {
     int idx = this->finna_hnit(hnit);
     if(idx != -1) {
         Hnit dummy;
