@@ -10,5 +10,6 @@ private:
 public:
     Hundur(int id, std::string nafn, int einkunn);
     std::string to_string();
+    Hundur* afrita() { return new Hundur(*this);}
     ~Hundur();
 };

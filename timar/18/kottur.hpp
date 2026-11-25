@@ -11,5 +11,6 @@ public:
     Kottur();
     Kottur(int id, std::string nafn, std::string eigandi);
     std::string to_string();
+    Kottur* afrita() { return new Kottur(*this); }
     ~Kottur();
 };

@@ -11,6 +11,33 @@ void Dyragardur::staekka_um(int staekkun) {
 
 Dyragardur::Dyragardur(): listinn(new Dyr*[3]), staerd(3), fjoldi(0) {}
 
+
+Dyragardur::Dyragardur(Dyragardur &annar) 
+        : listinn(new Dyr*[annar.staerd]), 
+          staerd(annar.staerd), fjoldi(annar.fjoldi) {
+    for(int i = 0; i < this->fjoldi; i++)
+        this->listinn[i] = annar.listinn[i]->afrita();
+}
+
+Dyragardur &Dyragardur::operator=(Dyragardur &annar) {
+    // Listi k;
+    // k = k;
+    if(this == &annar) {
+        return *this;
+    }
+    // þurfum að eyða dýrunum sem eru nú þegar í this
+    for(int i = 0; i < this->fjoldi; i++)
+        delete this->listinn[i];
+    delete [] this->listinn;
+
+    this->staerd = annar.staerd;
+    this->listinn = new Dyr*[this->staerd];
+    this->fjoldi = annar.fjoldi;
+    for(int i = 0; i < this->fjoldi; i++)
+        this->listinn[i] = annar.listinn[i]->afrita();
+    return *this;
+}
+
 int Dyragardur::finna_dyr_med_id(int id) {
     for(int i = 0; i < this->fjoldi; i++)
         if(this->listinn[i]->get_id() == id)

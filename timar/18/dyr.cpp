@@ -15,3 +15,7 @@ std::string Dyr::get_nafn() {
 std::string Dyr::to_string() {
     return std::to_string(this->id) + " " + this->nafn;
 }
+
+Dyr* Dyr::afrita() {
+    return new Dyr(*this);
+}

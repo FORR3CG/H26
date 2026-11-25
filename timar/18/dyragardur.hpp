@@ -13,6 +13,8 @@ class Dyragardur {
         void staekka_um(int stakkun);
     public:
         Dyragardur();
+        Dyragardur(Dyragardur& annar);
+        Dyragardur& operator=(Dyragardur& annar);
         int finna_dyr_med_id(int id);
         bool setja_i_saeti(int saeti, Dyr* stak);
         bool skra_hund_aftast(int id, std::string nafn, int hlydnieinkunn);

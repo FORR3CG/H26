@@ -28,7 +28,8 @@ class Listi {
         // Listi& operator=(Listi& annar) = delete;
 
         // Afritunarsmiður, erum að búa til nýjan lista út frá gömlum
-        // Listi nyr_listi(gamli_listinn)
+        // Listi nyr_listi(gamli_listinn);
+        // Listi nyr_listi = gamli_listinn; 
         Listi(Listi& gamli_listinn) {
             cout << "Afritunarsmiður" << endl;
             this->staerd = gamli_listinn.staerd;
@@ -38,9 +39,9 @@ class Listi {
                 this->listinn[i] = gamli_listinn.listinn[i];
         }
 
-        // Eigum lista og erum að afrita úr öðrum lista
-        // Listi k;
-        // k = gamli_listinn;
+        // Eigum lista og erum að afrita (yfirskifa) úr öðrum lista
+        // Listi nyr_listi;
+        // nyr_listi = gamli_listinn;
         Listi& operator=(Listi& gamli_listinn) {
             cout << "assignment operator" << endl;
             // Listi k;

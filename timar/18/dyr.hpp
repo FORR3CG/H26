@@ -12,6 +12,7 @@ public:
     Dyr(int id, std::string nafn);
     int get_id();
     std::string get_nafn();
+    virtual Dyr* afrita();
     virtual std::string to_string();
     virtual ~Dyr() = default; // eða virtual ~Dyr() {}
 };
